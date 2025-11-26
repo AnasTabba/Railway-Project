@@ -10,11 +10,11 @@ load_dotenv()
 
 # Database connection
 conn = pymysql.connect(
-    host=os.getenv('DB_HOST', 'mysql'),
-    port=int(os.getenv('DB_PORT', 3306)),
+    host=os.getenv('DB_HOST', 'localhost'),
+    port=int(os.getenv('DB_PORT', 3307)),
     user=os.getenv('DB_USER', 'railway_user'),
-    password=os.getenv('DB_PASS', 'railway_password'),
-    database=os.getenv('DB_NAME', 'railway_db'),
+    password=os.getenv('DB_PASSWORD', 'railway_pass'),
+    database=os.getenv('DB_NAME', 'railway_booking'),
     autocommit=False
 )
 

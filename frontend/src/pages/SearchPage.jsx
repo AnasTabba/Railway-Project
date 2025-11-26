@@ -106,14 +106,8 @@ export default function SearchPage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="flex justify-center items-center gap-4 mb-4">
-            <img src="/assets/logo.svg" alt="Safar" className="h-16 w-16 animate-pulse" />
-            <div>
-              <h1 className="text-5xl font-bold text-primary mb-2">Safar</h1>
-              <p className="text-2xl text-gray-700 italic" style={{fontFamily: 'Noto Nastaliq Urdu, serif'}}>یادوں کا سفر</p>
-            </div>
-          </div>
-          <p className="text-gray-600 mt-4">Search and book trains across Pakistan</p>
+          <h1 className="text-4xl font-bold text-primary mb-4">🚂 Find Your Train</h1>
+          <p className="text-gray-600">Search and book trains across Pakistan</p>
         </div>
 
         <Card className="max-w-2xl mx-auto">
