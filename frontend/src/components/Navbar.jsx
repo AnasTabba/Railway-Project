@@ -13,9 +13,17 @@ export const Navbar = () => {
 
   return (
     <nav className="bg-primary text-white shadow-lg">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-secondary">
-          🚂 Railway System
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <Link to="/" className="flex items-center gap-3 group">
+          <img 
+            src="/assets/logo.svg" 
+            alt="Safar Logo" 
+            className="h-12 w-12 transition-transform group-hover:scale-110"
+          />
+          <div>
+            <span className="text-3xl font-bold text-secondary tracking-wide">Safar</span>
+            <p className="text-xs text-gray-300 italic" style={{fontFamily: 'Noto Nastaliq Urdu, serif'}}>یادوں کا سفر</p>
+          </div>
         </Link>
 
         <div className="flex items-center gap-6">
