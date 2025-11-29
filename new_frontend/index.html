@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PakRail Express - Book Train Tickets in Pakistan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Minimal dependencies; keeping things lean -->
+</head>
+<body>
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__inner">
+                <h1>Travel Across Pakistan by Train</h1>
+                <p class="subtitle">Book tickets for all major routes with instant confirmation</p>
+                <div class="search-widget">
+                    <div class="search-grid">
+                        <div class="relative">
+                            <label class="label">From</label>
+                            <div class="relative">
+                                <input type="text" placeholder="Departure station" class="input">
+                            </div>
+                        </div>
+                        
+                        <div class="swap">
+                            <button class="btn btn--ghost">⇄</button>
+                        </div>
+                        
+                        <div class="relative">
+                            <label class="label">To</label>
+                            <div class="relative">
+                                <input type="text" placeholder="Arrival station" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="search-grid search-grid--secondary">
+                        <div>
+                            <label class="label">Date</label>
+                            <div class="relative">
+                                <input type="date" class="input">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label">Class</label>
+                            <select class="input">
+                                <option>All Classes</option>
+                                <option>Economy</option>
+                                <option>AC</option>
+                                <option>Sleeper</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary btn--xl w-100">Search Trains</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Popular Routes -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i data-feather="star" class="mr-2 text-emerald-500"></i>
+                Popular Routes
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="#" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-4 transition group">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-semibold text-lg group-hover:text-cyan-400">Karachi → Lahore</h3>
+                        <span class="bg-gray-700 text-emerald-400 text-xs px-2 py-1 rounded">Express</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-3">From Rs. 1,500</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                        <span>14h 30m</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-4 transition group">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-semibold text-lg group-hover:text-cyan-400">Lahore → Islamabad</h3>
+                        <span class="bg-gray-700 text-emerald-400 text-xs px-2 py-1 rounded">Express</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-3">From Rs. 1,200</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                        <span>4h 15m</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-4 transition group">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-semibold text-lg group-hover:text-cyan-400">Islamabad → Peshawar</h3>
+                        <span class="bg-gray-700 text-emerald-400 text-xs px-2 py-1 rounded">Express</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-3">From Rs. 800</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                        <span>2h 45m</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="bg-gray-800 hover:bg-gray-700 rounded-lg p-4 transition group">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-semibold text-lg group-hover:text-cyan-400">Karachi → Quetta</h3>
+                        <span class="bg-gray-700 text-emerald-400 text-xs px-2 py-1 rounded">Express</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-3">From Rs. 2,100</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                        <span>21h 10m</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Features -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-center">Why Choose PakRail Express?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="shield" class="text-emerald-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Secure Booking</h3>
+                    <p class="text-gray-400">Your personal and payment information is always protected.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="clock" class="text-cyan-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Instant Confirmation</h3>
+                    <p class="text-gray-400">Get your tickets immediately after payment.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="smartphone" class="text-emerald-500 w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Mobile Tickets</h3>
+                    <p class="text-gray-400">No need to print - show your e-ticket on your phone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Results -->
+        <section class="results" id="resultsSection" hidden>
+            <div class="results__header">
+                <div class="route" id="resultsRoute"></div>
+                <div class="date" id="resultsDate"></div>
+                <button class="btn btn--ghost" id="editSearchBtn">Edit Search</button>
+            </div>
+            <div class="results__content">
+                <aside class="filters">
+                    <div class="filters__group">
+                        <label class="label">Sort By</label>
+                        <select id="sortBy" class="input">
+                            <option value="price">Cheapest</option>
+                            <option value="departure_time">Earliest departure</option>
+                            <option value="duration">Fastest</option>
+                        </select>
+                    </div>
+                    <div class="filters__group">
+                        <label class="label">Class</label>
+                        <div class="filters__chips">
+                            <button data-class="economy" class="chip">Economy</button>
+                            <button data-class="ac" class="chip">AC</button>
+                            <button data-class="sleeper" class="chip">Sleeper</button>
+                        </div>
+                    </div>
+                </aside>
+                <div class="results__list" id="resultsList">
+                    <!-- Cards injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Modal -->
+        <div class="modal" id="bookingModal" aria-hidden="true" hidden>
+            <div class="modal__dialog">
+                <div class="modal__header">
+                    <h3 id="bookingTitle">Complete Your Booking</h3>
+                    <button class="modal__close" id="closeBooking">✕</button>
+                </div>
+                <div class="modal__body">
+                    <div class="summary" id="bookingSummary"></div>
+                    <form id="bookingForm">
+                        <div class="grid2">
+                            <div>
+                                <label class="label">Passenger Name</label>
+                                <input type="text" id="passengerName" class="input" required>
+                            </div>
+                            <div>
+                                <label class="label">Age</label>
+                                <input type="number" id="passengerAge" class="input" min="1" max="120" required>
+                            </div>
+                        </div>
+                        <div class="grid2">
+                            <div>
+                                <label class="label">Gender</label>
+                                <select id="passengerGender" class="input" required>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="label">Seat Number</label>
+                                <input type="text" id="seatNumber" class="input" placeholder="e.g., A1" required>
+                            </div>
+                        </div>
+                        <div class="grid2">
+                            <div>
+                                <label class="label">Class</label>
+                                <select id="seatClass" class="input" required>
+                                    <option value="economy">Economy</option>
+                                    <option value="ac">AC</option>
+                                    <option value="sleeper">Sleeper</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="label">Journey Date</label>
+                                <input type="date" id="journeyDate" class="input" required>
+                            </div>
+                        </div>
+                        <div class="modal__actions">
+                            <button type="button" class="btn btn--ghost" id="cancelBooking">Cancel</button>
+                            <button type="submit" class="btn btn--primary" id="confirmBooking">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auth Modal -->
+        <div class="modal" id="authModal" aria-hidden="true" hidden>
+            <div class="modal__dialog">
+                <div class="modal__header">
+                    <h3>Sign In</h3>
+                    <button class="modal__close" id="closeAuth">✕</button>
+                </div>
+                <div class="modal__body">
+                    <form id="loginForm">
+                        <div class="grid2">
+                            <div>
+                                <label class="label">Username</label>
+                                <input type="text" id="loginUsername" class="input" required>
+                            </div>
+                            <div>
+                                <label class="label">Password</label>
+                                <input type="password" id="loginPassword" class="input" required>
+                            </div>
+                        </div>
+                        <div class="modal__actions">
+                            <button type="button" class="btn btn--ghost" id="switchToRegister">Register</button>
+                            <button type="submit" class="btn btn--primary">Sign In</button>
+                        </div>
+                    </form>
+                    <form id="registerForm" hidden>
+                        <div class="grid2">
+                            <div>
+                                <label class="label">Email</label>
+                                <input type="email" id="regEmail" class="input" required>
+                            </div>
+                            <div>
+                                <label class="label">Username</label>
+                                <input type="text" id="regUsername" class="input" required>
+                            </div>
+                        </div>
+                        <div class="grid2">
+                            <div>
+                                <label class="label">Password</label>
+                                <input type="password" id="regPassword" class="input" required>
+                            </div>
+                            <div>
+                                <label class="label">Full Name</label>
+                                <input type="text" id="regFullName" class="input" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label">Phone</label>
+                            <input type="tel" id="regPhone" class="input" placeholder="+92..." required>
+                        </div>
+                        <div class="modal__actions">
+                            <button type="button" class="btn btn--ghost" id="switchToLogin">Back to Login</button>
+                            <button type="submit" class="btn btn--primary">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

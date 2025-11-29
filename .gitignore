@@ -62,3 +62,7 @@ frontend/build/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Additional frontend tooling
+.vite/
+new_frontend/node_modules/
